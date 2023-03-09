@@ -6,6 +6,9 @@ https://github.com/sayedmdabu/Data-Structures-Algorithms/blob/main/1.Understandi
 the time complexity for selection sort can be defined by the function f(n) = n²/2-n/2
 
 
+https://github.com/sayedmdabu/Data-Structures-Algorithms/blob/main/1.Understanding%20of%20Big%20O%20Notation/Selection%20Sort%20Loops%20Illustrated.png
+
+
 3. Big O, Little O, Omega & Theta
 Big O: “f(n) is O(g(n))” iff for some constants c and N₀, f(N) ≤ cg(N) for all N > N₀
 
@@ -61,6 +64,33 @@ If you are interested in the reasoning, look up the Gamma function, it is an ana
 When multiplying, the complexity will be greater than the original, but no more than the equivalence of multiplying something that is more complex. For example, O(n * log(n)) is more complex than O(n) but less complex than O(n²), because O(n²) = O(n * n) and n is more complex than log(n).
 
 
+Question 2: Rank following functions from the most complex to the least complex.
+
 https://github.com/sayedmdabu/Data-Structures-Algorithms/blob/main/1.Understanding%20of%20Big%20O%20Notation/Rank%20following%20functions%20from%20the%20most%20complex%20to%20the%20least%20complex..png
+
+Solution to Section 2 Question:
+It was actually meant to be a trick question to test your understanding. The question tries to make you answer O(n²) because there is a nested for loop. However, n is supposed to be the input size. Since the image array is the input, and every pixel was iterated through only once, the answer is actually O(n). The next section will go over more examples like this one.
+
+
+5. Time & Space Complexity
+So far, we have only been discussing the time complexity of the algorithms. That is, we only care about how much time it takes for the program to complete the task. What also matters is the space the program takes to complete the task. The space complexity is related to how much memory the program will use, and therefore is also an important factor to analyze.
+
+The space complexity works similarly to time complexity. For example, selection sort has a space complexity of O(1), because it only stores one minimum value and its index for comparison, the maximum space used does not increase with the input size.
+
+Some algorithms, such as bucket sort, have a space complexity of O(n), but are able to chop down the time complexity to O(1). Bucket sort sorts the array by creating a sorted list of all the possible elements in the array, then increments the count whenever the element is encountered. In the end the sorted array will be the sorted list elements repeated by their counts.
+
+https://github.com/sayedmdabu/Data-Structures-Algorithms/blob/main/1.Understanding%20of%20Big%20O%20Notation/Bucket%20Sort%20Visualization.png
+
+
+6. Best, Average, Worst, Expected Complexity
+The complexity can also be analyzed as best case, worst case, average case and expected case.
+
+Let’s take insertion sort, for example. Insertion sort iterates through all the elements in the list. If the element is smaller than its previous element, it inserts the element backwards until it is larger than the previous element.
+
+https://github.com/sayedmdabu/Data-Structures-Algorithms/blob/main/1.Understanding%20of%20Big%20O%20Notation/Insertion%20Sort%20Illustrated,%20Image.gif
+
+
+
+https://github.com/sayedmdabu/Data-Structures-Algorithms/blob/main/1.Understanding%20of%20Big%20O%20Notation/Big%20O%20Cheatsheet%20for%20Common%20Algorithms.png
 
 
